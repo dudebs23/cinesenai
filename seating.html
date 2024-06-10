@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Poltronas</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selecione a Poltrona e o Horário</h1>
+    </header>
+    <main>
+        <h2>Poltronas Disponíveis</h2>
+        <ul id="poltronas-list">
+            <!-- Poltronas disponíveis serão adicionadas dinamicamente aqui -->
+        </ul>
+        <p>Poltrona selecionada: <span id="poltrona-selecionada"></span></p>
+        <h2>Horários Disponíveis</h2>
+        <div id="horarios-list">
+            <!-- Horários disponíveis serão adicionados dinamicamente aqui -->
+        </div>
+        <h2>Forma de Pagamento</h2>
+        <div id="forma-pagamento">
+            <input type="radio" id="credito" name="pagamento" value="credito">
+            <label for="credito">Cartão de Crédito</label><br>
+            <input type="radio" id="debito" name="pagamento" value="debito">
+            <label for="debito">Cartão de Débito</label><br>
+            <input type="radio" id="dinheiro" name="pagamento" value="dinheiro">
+            <label for="dinheiro">Dinheiro</label><br>
+        </div>
+        <button id="confirmar-reserva" disabled>Confirmar Reserva</button>
+    </main>
+    <script src="script/seating.js"></script>
+</body>
+</html>

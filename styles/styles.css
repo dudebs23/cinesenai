@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFD700; /* Amarelo SENAI */
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#poltronas-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#poltronas-list li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #f9f9f9; /* Cor de fundo das poltronas */
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#poltronas-list li.ocupada {
+    background-color: #ccc; /* Cor de fundo das poltronas ocupadas */
+    cursor: not-allowed;
+}
+
+#poltronas-list li.selecionada {
+    background-color: #FFD700; /* Amarelo SENAI */
+}
+
+#forma-pagamento {
+    margin-top: 20px;
+}
+
+#confirmar-reserva {
+    background-color: #FFD700; /* Amarelo SENAI */
+    color: black; /* Preto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmar-reserva:disabled {
+    background-color: #ccc; /* Cor de fundo do botão desativado */
+    cursor: not-allowed;
+}
